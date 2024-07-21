@@ -1,8 +1,9 @@
 from sqlite3 import OperationalError
 from urllib.parse import urlparse
-from venv import logger
+import logging
 
 from sqlalchemy.dialects.postgresql import psycopg2
+logger = logging.getLogger(__name__)
 
 from config import DSN
 # строка подключения
